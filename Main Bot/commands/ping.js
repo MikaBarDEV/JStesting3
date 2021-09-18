@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'ping',
+    name: 'js!ping',
     description: "this is a ping command!",
     execute(client, message, args, Discord){
         message.delete()

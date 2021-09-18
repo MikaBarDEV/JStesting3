@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'uptime',
+    name: 'dev!uptime',
     description: "this is a uptime command!",
     execute(client, message, args, Discord){ 
       const milliseconds = client.uptime

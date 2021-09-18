@@ -1,3 +1,4 @@
+console.clear()
 // Require the necessary discord.js classes
 const { Client, Intents, Collection, Discord } = require('discord.js');
 
@@ -20,6 +21,7 @@ main_client.events = new Collection();
 ['command_handler.js', 'event_handler.js'].forEach(handler =>{
   require(`./Main Bot/handlers/${handler}`)(main_client, Discord);
 })
+
 
 // create dev client
 const dev_client = new Client({ intents: myIntents });
