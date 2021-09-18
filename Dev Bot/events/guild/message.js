@@ -3,6 +3,7 @@ module.exports = (Discord, client, message) =>{
   const prefix = "dev!"
 
   if(!message.content.startsWith(prefix) || message.author.bot) return;
+  if("888440075573137418" == message.channel.id) return;
  
     const args = message.content.slice(prefix.length).split(/ +/);
     const cmd = args.shift().toLowerCase();
